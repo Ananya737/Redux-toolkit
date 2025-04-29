@@ -1,12 +1,10 @@
-import { configureStore } from "@reduxjs/toolkit"
-import myReducer from "./CounterSlice";
 
-
-const store = configureStore(
+import { configureStore } from "@reduxjs/toolkit";
+import nameReducer from "./nameSlice"
+const store=configureStore(
     {
         reducer:{
-            //your reducer goes here
-            mycounter:myReducer
+            myname:nameReducer
         }
     }
 )

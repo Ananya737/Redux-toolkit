@@ -1,16 +1,17 @@
-import { increment,decrement } from "./CounterSlice";
 import { useSelector,useDispatch } from "react-redux";
+import { changeName } from "./nameSlice";
 
 
 const App=()=>{
-  const mycnt=useSelector(state=>state.mycounter.count);
+  const username=useSelector(state=>state.myname.user);
   const dispatch= useDispatch();
   return(
     <>
-    <h1>Counter App!</h1>
-    <button onClick={()=>{dispatch(increment())}}>Increment</button>
-    <h2>{mycnt}</h2>
-    <button onClick={()=>{dispatch(decrement())}}>Decrement</button>
+
+    <h1>Welcome {username}</h1>
+    <button onClick={()=>dispatch(changeName())}>Click</button>
+
+  
     
     
     </>
