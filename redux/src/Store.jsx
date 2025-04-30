@@ -1,10 +1,11 @@
 
 import { configureStore } from "@reduxjs/toolkit";
-import nameReducer from "./nameSlice"
+import colorReducer from "./colorSlice";
+
 const store=configureStore(
     {
         reducer:{
-            myname:nameReducer
+            mycolor:colorReducer
         }
     }
 )
