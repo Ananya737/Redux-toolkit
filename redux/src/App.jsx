@@ -1,7 +1,7 @@
-import { useSelector,useDispatch } from "react-redux";
 import { changeColor } from "./colorSlice";
+import { useDispatch } from "react-redux";
 import { useState } from "react";
-
+import { useSelector } from "react-redux";
 
 const App=()=>{
   const [inp,setInp]=useState("");
@@ -31,3 +31,22 @@ const clr=useSelector(state=>state.mycolor.color)
   )
 }
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
