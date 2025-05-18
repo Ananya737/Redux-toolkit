@@ -17,5 +17,30 @@ const nameSlice=createSlice(
     }
 )
 
+
+
+
+
+
+const colorSlice=createSlice(
+    {
+        name:"myColor",
+        initialState:{
+            color:"red"
+        },
+        reducers:{
+            changeColor:(state,actions)=>{
+                state.color=actions.payload
+            }
+        }
+    }
+)
+
+
+
 export const {changeName} = nameSlice.actions;
-export default nameSlice.reducer;
+export const {changeColor}= colorSlice.actions;
+
+
+export const nameReducer= nameSlice.reducer;
+export const colorReducer= colorSlice.reducer;

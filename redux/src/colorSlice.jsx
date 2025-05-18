@@ -13,5 +13,7 @@ const colorSlice=createSlice({
     }
 })
 
+
+
 export const {changeColor}=colorSlice.actions;
 export default colorSlice.reducer;
